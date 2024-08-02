@@ -16,4 +16,8 @@ const initialState: CartState = {
 export const cartSlice = createSlice({
   name: "cart",
   initialState,
+  reducers: {
+    addCart() {},
+    removeFormCart() {},
+  },
 });
