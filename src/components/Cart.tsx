@@ -7,6 +7,7 @@ type CartProps = {
 };
 
 export default function Cart({ onClose }: CartProps) {
+  // createPortal : render a component's children into a different part of the DOM,
   return createPortal(
     <>
       <div className="cart-backdrop" />
