@@ -1,13 +1,19 @@
-import { useCartSelector } from "../store/hooks";
+import { addCart, CartItem } from "../store/cart-slice";
+import { useCartDispatch, useCartSelector } from "../store/hooks";
 
 export default function CartItems() {
   const cartItems = useCartSelector((state) => state.cart.items);
+  const dispatch = useCartDispatch();
 
   const totalPrice = cartItems.reduce(
     (value, item) => value + item.price * item.quantity,
     0
   );
   const formattedTotalPrice = totalPrice.toFixed(2);
+
+  function handleAddToCart(item: CartItem) {
+    dispatch(addCart(item));
+  }
 
   return (
     <div id="cart">
