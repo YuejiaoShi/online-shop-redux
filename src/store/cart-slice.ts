@@ -36,6 +36,8 @@ export const cartSlice = createSlice({
       );
       if (state.items[itemIndex].quantity === 1) {
         state.items.splice(itemIndex, 1);
+      } else {
+        state.items[itemIndex].quantity--;
       }
     },
   },
