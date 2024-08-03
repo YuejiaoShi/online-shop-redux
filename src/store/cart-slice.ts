@@ -17,7 +17,10 @@ export const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
-    addCart(state, action: PayloadAction<>) {},
+    addCart(
+      state,
+      action: PayloadAction<{ id: string; title: string; price: number }>
+    ) {},
     removeFormCart() {},
   },
 });
