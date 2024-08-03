@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice,type PayloadAction } from "@reduxjs/toolkit";
 type CartItem = {
   id: string;
   title: string;
@@ -17,7 +17,7 @@ export const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
-    addCart() {},
+    addCart(state, action:) {},
     removeFormCart() {},
   },
 });
