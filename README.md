@@ -1,30 +1,15 @@
-# React + TypeScript + Vite
+## Main shop page
+### Key Features:
+- Product Listings: Display of all available products with images, prices, and descriptions.
+- Add to Cart: Easily add desired items to the cart with a single click.  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![main page](mainpage.png)
 
-Currently, two official plugins are available:
+## Cart page
+### Key Features:
+- Item Summary: Display of all items added to the cart, including product names, prices, and quantities.
+- Edit Quantity: Users can adjust the quantity of each item directly in the cart.
+- Remove Items: Option to remove items from the cart.
+- Total Cost Calculation: Automatic calculation of the total cost, including any applicable taxes and discounts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![cart](cartpage.png)
