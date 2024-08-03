@@ -1,4 +1,8 @@
+import { useCartSelector } from "../store/hooks";
+
 export default function CartItems() {
+  const cartItems = useCartSelector((state) => state.cart.items);
+
   return (
     <div id="cart">
       <p>No items in cart!</p>
