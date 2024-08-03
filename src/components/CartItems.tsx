@@ -1,4 +1,4 @@
-import { addCart, CartItem } from "../store/cart-slice";
+import { addCart, CartItem, removeFromCart } from "../store/cart-slice";
 import { useCartDispatch, useCartSelector } from "../store/hooks";
 
 export default function CartItems() {
@@ -13,6 +13,10 @@ export default function CartItems() {
 
   function handleAddToCart(item: CartItem) {
     dispatch(addCart(item));
+  }
+
+  function handleRemoveFromCart(id: string) {
+    dispatch(removeFromCart(id));
   }
 
   return (
